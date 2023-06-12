@@ -13,6 +13,7 @@ import AllocationForm from './components/AllocationForm';
 
 
 import { AppProvider } from './context/AppContext';
+import CurrencyList from './components/CurrencyList';
 const App = () => {
     return (
         <AppProvider>
@@ -30,6 +31,10 @@ const App = () => {
                     {/* Add ExpenseTotal component here under */}        
                     <div className='col-sm'>
                         <ExpenseTotal />
+                    </div>
+
+                    <div className='col-sm'>
+                        <CurrencyList />
                     </div>
                 </div>
                 <h3 className='mt-3'>Allocation</h3>
